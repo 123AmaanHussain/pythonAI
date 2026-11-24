@@ -1,0 +1,26 @@
+[project]
+name = "12-project-feedback-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "123AmaanHussain", email = "ammu.amaanhussain@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.136.3",
+    "google-genai>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "streamlit>=1.58.0",
+]
+
+[project.scripts]
+12-project-feedback-analysis = "_12_project_feedback_analysis:main"
+
+[tool.uv.build-backend]
+module-name = "_12_project_feedback_analysis"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
